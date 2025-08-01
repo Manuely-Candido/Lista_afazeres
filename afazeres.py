@@ -29,11 +29,13 @@ while True:
 
     elif lista == 3:
         print("Você escolheu o número 3")
-
+        concluido = input("Qual das tarefas você quer marcar concluída?")
+        print()
 
     elif lista == 4:
         print("Você escolheu o número 4")
         item_removido = input("Qual tarefa voce deseja remover: ")
+        lista_tarefas
 
 
         lista_tarefas.remove
