@@ -23,22 +23,28 @@ while True:
 
     elif lista == 2:
         print("Você escolheu o número 2")
+        #cont = 0
         for tarefa in lista_tarefas:
-            print(tarefa)
+            print(tarefa) #print(f"{cont} - {tarefa})
+            #cont +=1
         
 
     elif lista == 3:
         print("Você escolheu o número 3")
-        concluido = input("Qual das tarefas você quer marcar concluída?")
-        print()
+        for tarefa in lista_tarefas:
+            print (tarefa)
+            concluido = input("Qual das tarefas você quer marcar concluída?: ")
+            lista_tarefas[concluido] = lista_tarefas[concluido] + "( x )"
+          
 
     elif lista == 4:
         print("Você escolheu o número 4")
+        #lista_tarefas()
         item_removido = input("Qual tarefa voce deseja remover: ")
-        lista_tarefas
+        #lista_tarefas.pop(item_removido)
+        lista_tarefas.remove(item_removido)
+        print(lista_tarefas)
 
-
-        lista_tarefas.remove
     elif lista == 0:
         print("Você escolheu sair")
         break
