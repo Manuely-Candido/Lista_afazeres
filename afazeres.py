@@ -1,4 +1,7 @@
+
 lista_tarefas = []
+banco_de_dados = banco_de_dados
+
 while True:
     print("""
 *****************************
@@ -48,4 +51,9 @@ while True:
 
     elif lista == 0:
         print("Você escolheu sair")
+        with open("banco_de_dados.txt","w") as arquivo:
+            for tarefa in lista_tarefas:
+                arquivo.write(tarefa + "\n")
+        print("Lista de tarefas salva com sucesso!!")
+        banco_de_dados.salvar_tarefas(tarefa.lista_tarefas)
         break
