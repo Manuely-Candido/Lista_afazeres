@@ -30,11 +30,12 @@ while True:
         
 
     elif lista == 3:
-        print("Você escolheu o número 3")
+        o = 0
         for tarefa in lista_tarefas:
-            print (tarefa)
-            concluido = input("Qual das tarefas você quer marcar concluída?: ")
-            lista_tarefas[concluido] = lista_tarefas[concluido] + "( x )"
+            print(f"{o} {tarefa}")
+            o +=1
+        concluido = int(input("Qual das tarefas você quer marcar concluída?: "))
+        lista_tarefas[concluido] = lista_tarefas[concluido] + " x "
           
 
     elif lista == 4:
