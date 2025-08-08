@@ -55,3 +55,8 @@ while True:
                 arquivo.write(tarefa + "\n")
         print("Lista de tarefas salva com sucesso!!")
         break
+
+    lista = []
+    with open("banco_de_dados.txt","r") as arquivo:
+        for tarefa in arquivo:
+            lista.append(tarefa.strip())
